@@ -1,20 +1,37 @@
+# Apache pig with example files:
+
+Image with examples from https://www.tutorialspoint.com/apache_pig/apache_pig_join_operator.htm
+
+
+Based on [hakanserce/docker-apache-pig](https://hub.docker.com/r/hakanserce/docker-apache-pig/), adds examples
+
+# Pull the image
+```
+docker pull visgean/baked-pig
+```
+
+# Start a container
+In order to use the Docker image use:
+
+```
+docker run -i -t visgean/baked-pig /etc/bootstrap.sh -bash
+```
+
 
 ## Start a container
 
 In order to use the Docker image use:
 
 ```
-	docker run -i -t hakanserce/apache-pig /etc/bootstrap.sh -bash
+	docker run -i -t visgean/baked-pig /etc/bootstrap.sh -bash
 ```
 
-locally:
+Start pig in local mode:
 
-
-	docker run -i -t e98bb7850a95 /etc/bootstrap.sh -bash
-
-
-
+```
 pig -x local
+```
+
 
 # Examples:
 
